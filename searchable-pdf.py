@@ -59,7 +59,7 @@ def get_file(request_id, pdf_path):
     return response.json()
 
 if __name__ == "__main__":
-    pdf_path = r"C:\temp\Redacted_Signature.pdf"  # Replace with the path to your PDF file
+    pdf_path = r"scansmp3.pdf"  # Replace with the path to your PDF file
     encoded_pdf = encode_pdf_base64(pdf_path) # Encode the PDF with BASE64
     result = call_api(encoded_pdf)
     print(result)
